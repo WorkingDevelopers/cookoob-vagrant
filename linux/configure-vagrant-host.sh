@@ -45,7 +45,7 @@ function setup-hosts() {
         cat "${FILE}" | tail -n +$(( END + 1 )) >> "${TMP}"
     fi
 
-    ${DIFF_TOOL} "${TMP}" "${FILE}"
+    ${DIFF_TOOL} "${FILE}" "${TMP}"
     local NOTSAME=$?
 
     if [[ ${NOTSAME} -gt 0 ]]; then
