@@ -170,12 +170,12 @@ nginx:
                         - '$path_info $fastcgi_path_info'
                     proxy: ''
                     proxy_redirect: ''
-        nxv_dn7vgnf1pebo:
+        nxv_dn7vgnf1peo:
             server_name: cookoob.nginx.dev
             server_aliases:
                 - www.cookoob.nginx
                 - cookoob.dev
-            www_root: /var/www/cookook/frontend/web
+            www_root: /var/www/cookoob/frontend
             listen_port: '80'
             index_files:
                 - index.html
