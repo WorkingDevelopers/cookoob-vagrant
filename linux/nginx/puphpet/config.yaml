@@ -149,6 +149,10 @@ nginx:
                         - $uri
                         - $uri/
                         - /app_dev.php$is_args$args
+                    index_files:
+                        - index.html
+                        - index.php
+                        - app_dev.php
                     fastcgi: ''
                     fastcgi_index: ''
                     fastcgi_split_path: ''
@@ -368,16 +372,27 @@ mysql:
     adminer: 0
     users:
         mysqlnu_1bamcgs8ie4o:
-            name: dbuser
+            name: ckb_dbu
+            password: '123'
+        mysqlnu_1bamcgs8ie4g:
+            name: ckb_dbutest
             password: '123'
     databases:
         mysqlnd_bd6grq0q9cd5:
-            name: dbname
+            name: ckb_db
+            sql: ''
+        mysqlnd_bd6grq0q9cd6:
+            name: ckb_dbtest
             sql: ''
     grants:
         mysqlng_dbugwxxfcz82:
-            user: dbuser
-            table: '*.*'
+            user: ckb_dbu
+            table: 'ckb_db.*'
+            privileges:
+                - ALL
+        mysqlng_dbugwxxfcz82:
+            user: ckb_dbutest
+            table: 'ckb_dbtest.*'
             privileges:
                 - ALL
 postgresql:
