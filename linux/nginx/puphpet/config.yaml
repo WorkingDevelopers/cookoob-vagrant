@@ -390,7 +390,7 @@ mysql:
             table: 'ckb_db.*'
             privileges:
                 - ALL
-        mysqlng_dbugwxxfcz82:
+        mysqlng_dbugwxxfcz83:
             user: ckb_dbutest
             table: 'ckb_dbtest.*'
             privileges:
