@@ -179,7 +179,7 @@ nginx:
             server_aliases:
                 - www.cookoob.nginx
                 - cookoob.dev
-            www_root: /var/www/cookoob/frontend
+            www_root: /var/www/cookoob/frontend/build
             listen_port: '80'
             index_files:
                 - index.html
