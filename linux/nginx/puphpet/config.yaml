@@ -28,8 +28,8 @@ vagrantfile:
                                 vflmnfp_c137d0lcf19s:
                                     host: '5286'
                                     guest: '22'
-                        memory: '512'
-                        cpus: '1'
+                        memory: '1024'
+                        cpus: '2'
         provision:
             puppet:
                 manifests_path: puphpet/puppet/manifests
